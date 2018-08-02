@@ -146,8 +146,7 @@
       "Description":"ayuda a dar orden a una expresión"
     },
     {
-      "Symbol":"{
-      ", 
+      "Symbol":"{", 
       "Name":"operadoragrupacion",
       "Description":"abre o cierra código"
     },
@@ -175,11 +174,6 @@
       "Symbol":"\"", 
       "Name":"palabrareservada",
       "Description":"permite copiar una cadena de caracteres"
-    },
-    {
-      "Symbol":"\'", 
-      "Name":"palabrareservada",
-      "Description":"permite definir un caracter"
     },
     {
       "Symbol":"\t", 
