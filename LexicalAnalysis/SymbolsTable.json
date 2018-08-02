@@ -1,0 +1,231 @@
+﻿{
+  "Table":[
+    {
+      "Symbol":"byte", 
+      "Name":"tipodedatoprimitivo",
+      "Description":"determina el dominio del dato"
+    },
+    {
+      "Symbol":"function", 
+      "Name":"palabrareservada",
+      "Description":"son palabras que asignan funciones especificas"
+    },
+    {
+      "Symbol":"while", 
+      "Name":"controldeflujo",
+      "Description":"uno de los 3 principales ciclos,el while repite procesos hasta que su condición no se verdadera"
+    },
+    {
+      "Symbol":"short", 
+      "Name":"tipodedatoprimitivo",
+      "Description":"determina el dominio del dato"
+    },
+    {
+      "Symbol":"int", 
+      "Name":"tipodedatoprimitivo",
+      "Description":"determina el dominio del dato"
+    },
+    {
+      "Symbol":"long", 
+      "Name":"tipodedatoprimitivo",
+      "Description":"determina el dominio del dato"
+    },
+    {
+      "Symbol":"chart", 
+      "Name":"tipodedatoprimitivo",
+      "Description":"determina el dominio del dato"
+    },
+    {
+      "Symbol":"float", 
+      "Name":"tipodedatoreal",
+      "Description":"determina el dominio del dato"
+    },
+    {
+      "Symbol":"double", 
+      "Name":"tipodedatoreal",
+      "Description":"determina el dominio del dato"
+    },
+    {
+      "Symbol":"String", 
+      "Name":"tipodedatoreal",
+      "Description":"determina el dominio del dato"
+    },
+    {
+      "Symbol":"", 
+      "Name":"tipodedato",
+      "Description":"indica que el dato es vacío"
+    },
+    {
+      "Symbol":"+", 
+      "Name":"operadoraritmetico",
+      "Description":"realiza la operación matematica: suma"
+    },
+    {
+      "Symbol":"-", 
+      "Name":"operadoraritmetico",
+      "Description":"realiza la operación matematica :resta"
+    },
+    {
+      "Symbol":"*", 
+      "Name":"operadoraritmetico",
+      "Description":"realiza la operación matematica: multiplicación"
+    },
+    {
+      "Symbol":"/", 
+      "Name":"operadoraritmetico",
+      "Description":"realiza la operación matematica: división"
+    },
+    {
+      "Symbol":"%", 
+      "Name":"operadoraritmetico",
+      "Description":"realiza la operación matematica: MOD (residuo)"
+    },
+    {
+      "Symbol":"++", 
+      "Name":"operadoraritmetico",
+      "":"incrementa en una unidad"
+    },
+    {
+      "Symbol":"<", 
+      "Name":"operadorrelacional",
+      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor"
+    },
+    {
+      "Symbol":">", 
+      "Name":"operadorrelacional",
+      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor"
+    },
+    {
+      "Symbol":"<=", 
+      "Name":"operadorrelacional",
+      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales"
+    },
+    {
+      "Symbol":">=", 
+      "Name":"operadorrelacional",
+      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales"
+    },
+    {
+      "Symbol":"!=", 
+      "Name":"operadorrelacional",
+      "Description":"compara dos elementos, ayuda a conocer si dos variables son diferentes o iguales"
+    },
+    {
+      "Symbol":"==", 
+      "Name":"operadorrelacional",
+      "Description":"indica igualdad matematica"
+    },
+    {
+      "Symbol":"=", 
+      "Name":"operadorrelacional",
+      "Description":"indica igualdad matematica"
+    },
+    {
+      "Symbol":"&&", 
+      "Name":"operadorlogico",
+      "Description":"determina si ambos valores son verdaderos o no"
+    },
+    {
+      "Symbol":"||", 
+      "Name":"operadorlogico",
+      "Description":"determina si algunos de los dos valores se cumple o no"
+    },
+    {
+      "Symbol":"!NOT", 
+      "Name":"operadorlogico",
+      "Description":"niega"
+    },
+    {
+      "Symbol":"(", 
+      "Name":"operadoragrupacion",
+      "Description":"ayuda a dar orden a una expresión"
+    },
+    {
+      "Symbol":")", 
+      "Name":"operadoragrupacion",
+      "Description":"ayuda a dar orden a una expresión"
+    },
+    {
+      "Symbol":"{
+      ", 
+      "Name":"operadoragrupacion",
+      "Description":"abre o cierra código"
+    },
+    {
+      "Symbol":"}", 
+      "Name":"operadoragrupacion",
+      "Description":"abre o cierra código"
+    },
+    {
+      "Symbol":" ", 
+      "Name":"separador",
+      "Description":"separa y ayuda a organizar el codigo"
+    },
+    {
+      "Symbol":".", 
+      "Name":"separador",
+      "Description":"permite llamar  funciones"
+    },
+    {
+      "Symbol":";", 
+      "Name":"separador",
+      "Description":"organiza el codigo por sentencias"
+    },
+    {
+      "Symbol":"\"", 
+      "Name":"palabrareservada",
+      "Description":"permite copiar una cadena de caracteres"
+    },
+    {
+      "Symbol":"\'", 
+      "Name":"palabrareservada",
+      "Description":"permite definir un caracter"
+    },
+    {
+      "Symbol":"\t", 
+      "Name":"separador",
+      "Description":"permite detectar tabulaciones"
+    },
+    {
+      "Symbol":"\t", 
+      "Name":"separador",
+      "Description":"permite detectar tabulaciones"
+    },
+    {
+      "Symbol":"function", 
+      "Name":"palabrareservada",
+      "Description":"permite crear funciones"
+    },
+    {
+      "Symbol":"BEGIN", 
+      "Name":"palabrareservada",
+      "Description":"determina donde inicia el bloque de código"
+    },
+    {
+      "Symbol":"END", 
+      "Name":"palabrareservada",
+      "Description":"determina donde acaba el bloque de código"
+    },
+    {
+      "Symbol":"var", 
+      "Name":"palabrareservada",
+      "Description":"permite crear una variable"
+    },
+    {
+      "Symbol":"for", 
+      "Name":"controldeflujo",
+      "Description":"uno de los 3 principales ciclos,el for repite procesos hasta que su condición no se verdadera o llegué al final de sus conteos"
+    },
+    {
+      "Symbol":"if", 
+      "Name":"condicion",
+      "Description":"ayuda a tomar desiciones"
+    },
+    {
+      "Symbol":"else", 
+      "Name":"condicion",
+      "Description":"ayuda a tomar desiciones"
+    }
+    
+  ]
+ }
