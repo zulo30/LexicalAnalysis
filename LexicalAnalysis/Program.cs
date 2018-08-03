@@ -1,32 +1,68 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Json;
+using System.Text;
 
+using System.Linq;
+using System.Net;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+ 
 namespace LexicalAnalysis
 {
     class Program
     {
-
-        SymbolsTable symbolsTable;
-
+        SymbolsTable Table;
+      
+        public Program(String  data){
+            Table = JsonConvert.DeserializeObject<SymbolsTable>(data);
+        }
 
         //main Method
         public static void Main()
+
         {
+            String Json = System.IO.File.ReadAllText("SymbolsTable.json");
+            Program Program = new Program(Json);
+            SymbolsTable Table = Program.Table;
             Console.Write("Please enter the name of the file you want to read: ");
             string fileName = Console.ReadLine();
-            String[] lines = System.IO.File.ReadAllLines(fileName);
+            //String[] lines = System.IO.File.ReadAllLines(fileName);
+
+            String text = System.IO.File.ReadAllText(fileName);
             System.Console.WriteLine("Contents of WriteLines2.txt = ");
-            List<List<string>> code = findTokens(lines);
+            List<List<string>> code = Program.FindTokens(text);
+            System.Console.WriteLine(Table.SymbolsData.Count);
 
 
         }
+
+        public void PrintSymbolsTable( List<List<string>> code ){
+            string[] titles = new string[] { "LineNumber", "Symbols","Description", "Type"};
+
+        }
+
+        public void PrintSentences(List<List<string>> code)
+        {
+            string[] titles = new string[] { " Sentence  ", "NumberOfTokens ", "IsAlgebraic" };
+
+        }
+
+
+
+        public int FindLineNumber(){
+            return -1;
+        }
+
         /*
          *look for all tokens in the program 
          *
+         *
          */
 
-        public static List<List<string>>  findTokens(String[] lineText)
+        public List<List<string>>  FindTokens(String[] lineText)
         {
             List<List<string>> code = new List<List<String>>();
 
@@ -34,7 +70,7 @@ namespace LexicalAnalysis
             for (int i = 0; i < lineText.Length; i++)
             {
                 char[] charArray = lineText[i].ToCharArray();
-                var li = parsetokensOFASentences(charArray, aux);
+                var li = Parsetokens(charArray, aux);
                 code.Add(li);
             }
             return code;
@@ -43,71 +79,160 @@ namespace LexicalAnalysis
         }
 
         /*
-         *check if a separetor is a sentence separetor
+        *look for all tokens in the program 
+        *
+        */
+
+        public List<List<string>> FindTokens(String text)
+        {
+            List<List<string>> code = new List<List<String>>();
+            Queue aux = new Queue();
+            char[] charArray = text.ToCharArray();
+            code = ParsetokensOFASentences(charArray, aux, code);
+            return code;
+
+        }
+        /*
+         *check if a separator is a sentence separator
          *
          */
 
-
-        private static bool isASentencesSeparetor(char v)
+        private bool IsASentencesSeparator(char a)
         {
-            //throw new NotImplementedException();
+            string str = a.ToString();
+            SymbolsData sd = Table.RetrieveData(str);
+            bool ans = (sd != null) && sd.IsEnding;
+            return ans;
 
-            return false; 
+           
         }
+
+        private bool IsASpace(char a)
+        {
+            string str = a.ToString();
+            SymbolsData sd = Table.RetrieveData(str);
+            bool ans = (sd != null) && sd.IsIrrevelant;
+            return ans;
+
+
+        }
+
+
         /*
-         *check if a separetor is a sentence separetor
+         *check if a separator is a sentence separator
          *
          */
-        private static bool isASeparetor(char a)
-        {
-            throw new NotImplementedException();
 
+        public bool IsAseparator(char a)
+        {
+           string str = a.ToString();
+            string[] s = new string[] { "separador", "operadoraritmetico","operadorrelacional","operadoragrupacion" };
+            SymbolsData sd = Table.RetrieveData(str);
+            bool ans = ((sd != null) && ConcurType(s,sd))? true:false;
+            return ans;
         }
 
+       private bool ConcurType(string[] strs, SymbolsData sd)
+        {
+            bool ans = false;
+            foreach (string s in strs){
+                ans |= (string.Compare(sd.Type, s, StringComparison.Ordinal)==0);
+            }
+           return ans;
+        }
+
+
         /*
-         *check if a separetor is a sentence separetor
+         *check if a separator is a sentence separator
          *
          */
 
         private static String QueueToString(Queue q)
         {
-
-            char[] tmp = new char[q.Count];
-            for (int i = 0; i < q.Count; i++)
+            
+            var tmp = q.ToArray();
+            var chars = new char[tmp.Length];
+            for (int i = 0; i < tmp.Length;i++)
             {
-                tmp[i] = (char)q.Dequeue();
+                chars[i] = Convert.ToChar(tmp[i]);
             }
-            return new string(tmp);
+            var ans = new string(chars);
+            q.Clear();
+            return ans;
+
         }
         /*
-         *check if a separetor is a sentence separetor
+         *check if a separator is a sentence separator
          *
          */
 
-        private static List<String> parsetokensOFASentences(char[] charArray, Queue aux)
+        private List<String> Parsetokens(char[] charArray, Queue aux)
         {
             var li = new List<string>();
-            int k = 0;
+
             for (int j = 0; j < charArray.Length; j++)
             {
-                if (!isASentencesSeparetor(charArray[k]))
+                if (!IsAseparator(charArray[j]))
                 {
-                    if (!isASentencesSeparetor(charArray[k]))
-                    {
-
-                    }
-                    aux.Enqueue(charArray[k]);
+                   
+                    aux.Enqueue(charArray[j]);
                 }
                 else
-                {
-                    String str = QueueToString(aux);
-                    li.Add(str);
-                    li.Add(charArray[k].ToString());
+                {   if (aux.Count > 0)
+                    {
+                        String str = QueueToString(aux);
+                        li.Add(str);
+                    }
+                    if(!IsASpace(charArray[j]))
+                    {
+                        li.Add(charArray[j].ToString());
+                    }
                 }
                
             }
             return li;
         }
+
+        /*
+         *check if a separator is a sentence separator
+         *
+         */
+        private List<List<string>> ParsetokensOFASentences(char[] charArray, Queue aux, List<List<string>> code )
+        {
+            //bool SentenceCompleted = false;
+            int j = 0;
+            var li = new List<string>();
+
+            while (j<charArray.Length ){
+                if (!IsAseparator(charArray[j]))
+                {
+
+                    aux.Enqueue(charArray[j]);
+                }
+                else
+                {
+                   
+                    if (aux.Count > 0)
+                    {
+                        String str = QueueToString(aux);
+                        li.Add(str);
+                    }
+                    if (!IsASpace(charArray[j]))
+                    {
+                        li.Add(charArray[j].ToString());
+                    }
+                    if (IsASentencesSeparator(charArray[j]))
+                    {
+                        code.Add(li);
+                        li = new List<string>();
+
+                    }
+                }
+                j++;  
+            }
+
+            return code;
+        }
     }
-}
+}      
 

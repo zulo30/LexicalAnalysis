@@ -1,224 +1,312 @@
 ﻿{
-  "Table":[
+  "SymbolsData":[
     {
       "Symbol":"byte", 
-      "Name":"tipodedatoprimitivo",
-      "Description":"determina el dominio del dato"
+      "Type":"tipodedatoprimitivo",
+      "Description":"determina el dominio del dato",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"function", 
-      "Name":"palabrareservada",
-      "Description":"son palabras que asignan funciones especificas"
+      "Type":"palabrareservada",
+      "Description":"son palabras que asignan funciones especificas",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"while", 
-      "Name":"controldeflujo",
-      "Description":"uno de los 3 principales ciclos,el while repite procesos hasta que su condición no se verdadera"
+      "Type":"controldeflujo",
+      "Description":"uno de los 3 principales ciclos,el while repite procesos hasta que su condición no se verdadera",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"short", 
-      "Name":"tipodedatoprimitivo",
-      "Description":"determina el dominio del dato"
+      "Type":"tipodedatoprimitivo",
+      "Description":"determina el dominio del dato",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"int", 
-      "Name":"tipodedatoprimitivo",
-      "Description":"determina el dominio del dato"
+      "Type":"tipodedatoprimitivo",
+      "Description":"determina el dominio del dato",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"long", 
-      "Name":"tipodedatoprimitivo",
-      "Description":"determina el dominio del dato"
+      "Type":"tipodedatoprimitivo",
+      "Description":"determina el dominio del dato",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"chart", 
-      "Name":"tipodedatoprimitivo",
-      "Description":"determina el dominio del dato"
+      "Type":"tipodedatoprimitivo",
+      "Description":"determina el dominio del dato",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"float", 
-      "Name":"tipodedatoreal",
-      "Description":"determina el dominio del dato"
+      "Type":"tipodedatoreal",
+      "Description":"determina el dominio del dato",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"double", 
-      "Name":"tipodedatoreal",
-      "Description":"determina el dominio del dato"
+      "Type":"tipodedatoreal",
+      "Description":"determina el dominio del dato",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"String", 
-      "Name":"tipodedatoreal",
-      "Description":"determina el dominio del dato"
+      "Type":"tipodedatoreal",
+      "Description":"determina el dominio del dato",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"", 
-      "Name":"tipodedato",
-      "Description":"indica que el dato es vacío"
+      "Type":"tipodedato",
+      "Description":"indica que el dato es vacío",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"+", 
-      "Name":"operadoraritmetico",
-      "Description":"realiza la operación matematica: suma"
+      "Type":"operadoraritmetico",
+      "Description":"realiza la operación matematica: suma",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"-", 
-      "Name":"operadoraritmetico",
-      "Description":"realiza la operación matematica :resta"
+      "Type":"operadoraritmetico",
+      "Description":"realiza la operación matematica :resta",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"*", 
-      "Name":"operadoraritmetico",
-      "Description":"realiza la operación matematica: multiplicación"
+      "Type":"operadoraritmetico",
+      "Description":"realiza la operación matematica: multiplicación",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"/", 
-      "Name":"operadoraritmetico",
-      "Description":"realiza la operación matematica: división"
+      "Type":"operadoraritmetico",
+      "Description":"realiza la operación matematica: división",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"%", 
-      "Name":"operadoraritmetico",
-      "Description":"realiza la operación matematica: MOD (residuo)"
+      "Type":"operadoraritmetico",
+      "Description":"realiza la operación matematica: MOD (residuo)",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"++", 
-      "Name":"operadoraritmetico",
-      "":"incrementa en una unidad"
+      "Type":"operadoraritmetico",
+      "":"incrementa en una unidad",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"<", 
-      "Name":"operadorrelacional",
-      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor"
+      "Type":"operadorrelacional",
+      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":">", 
-      "Name":"operadorrelacional",
-      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor"
+      "Type":"operadorrelacional",
+      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"<=", 
-      "Name":"operadorrelacional",
-      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales"
+      "Type":"operadorrelacional",
+      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":">=", 
-      "Name":"operadorrelacional",
-      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales"
+      "Type":"operadorrelacional",
+      "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"!=", 
-      "Name":"operadorrelacional",
-      "Description":"compara dos elementos, ayuda a conocer si dos variables son diferentes o iguales"
+      "Type":"operadorrelacional",
+      "Description":"compara dos elementos, ayuda a conocer si dos variables son diferentes o iguales",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"==", 
-      "Name":"operadorrelacional",
-      "Description":"indica igualdad matematica"
+      "Type":"operadorrelacional",
+      "Description":"indica igualdad matematica",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"=", 
-      "Name":"operadorrelacional",
-      "Description":"indica igualdad matematica"
+      "Type":"operadorrelacional",
+      "Description":"indica igualdad matematica",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"&&", 
-      "Name":"operadorlogico",
-      "Description":"determina si ambos valores son verdaderos o no"
+      "Type":"operadorlogico",
+      "Description":"determina si ambos valores son verdaderos o no",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"||", 
-      "Name":"operadorlogico",
-      "Description":"determina si algunos de los dos valores se cumple o no"
+      "Type":"operadorlogico",
+      "Description":"determina si algunos de los dos valores se cumple o no",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"!NOT", 
-      "Name":"operadorlogico",
-      "Description":"niega"
+      "Type":"operadorlogico",
+      "Description":"niega",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"(", 
-      "Name":"operadoragrupacion",
-      "Description":"ayuda a dar orden a una expresión"
+      "Type":"operadoragrupacion",
+      "Description":"ayuda a dar orden a una expresión",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":")", 
-      "Name":"operadoragrupacion",
-      "Description":"ayuda a dar orden a una expresión"
+      "Type":"operadoragrupacion",
+      "Description":"ayuda a dar orden a una expresión",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"{", 
-      "Name":"operadoragrupacion",
-      "Description":"abre o cierra código"
+      "Type":"operadoragrupacion",
+      "Description":"abre o cierra código",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"}", 
-      "Name":"operadoragrupacion",
-      "Description":"abre o cierra código"
+      "Type":"operadoragrupacion",
+      "Description":"abre o cierra código",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":" ", 
-      "Name":"separador",
-      "Description":"separa y ayuda a organizar el codigo"
+      "Type":"separador",
+      "Description":"separa y ayuda a organizar el codigo",
+      "IsEnding": false,
+      "IsIrrelevant":true
     },
     {
       "Symbol":".", 
-      "Name":"separador",
-      "Description":"permite llamar  funciones"
+      "Type":"separador",
+      "Description":"permite llamar  funciones",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":";", 
-      "Name":"separador",
-      "Description":"organiza el codigo por sentencias"
+      "Type":"separador",
+      "Description":"organiza el codigo por sentencias",
+      "IsEnding": true,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"\"", 
-      "Name":"palabrareservada",
-      "Description":"permite copiar una cadena de caracteres"
+      "Type":"palabrareservada",
+      "Description":"permite copiar una cadena de caracteres",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"\t", 
-      "Name":"separador",
-      "Description":"permite detectar tabulaciones"
+      "Type":"separador",
+      "Description":"permite detectar tabulaciones",
+      "IsEnding": false,
+      "IsIrrelevant":true
     },
     {
-      "Symbol":"\t", 
-      "Name":"separador",
-      "Description":"permite detectar tabulaciones"
+      "Symbol":"\n", 
+      "Type":"separador",
+      "Description":"permite detectar tabulaciones",
+      "IsEnding": false,
+      "IsIrrelevant":true
     },
     {
       "Symbol":"function", 
-      "Name":"palabrareservada",
-      "Description":"permite crear funciones"
+      "Type":"palabrareservada",
+      "Description":"permite crear funciones",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"BEGIN", 
-      "Name":"palabrareservada",
-      "Description":"determina donde inicia el bloque de código"
+      "Type":"palabrareservada",
+      "Description":"determina donde inicia el bloque de código",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"END", 
-      "Name":"palabrareservada",
-      "Description":"determina donde acaba el bloque de código"
+      "Type":"palabrareservada",
+      "Description":"determina donde acaba el bloque de código",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"var", 
-      "Name":"palabrareservada",
-      "Description":"permite crear una variable"
+      "Type":"palabrareservada",
+      "Description":"permite crear una variable",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"for", 
-      "Name":"controldeflujo",
-      "Description":"uno de los 3 principales ciclos,el for repite procesos hasta que su condición no se verdadera o llegué al final de sus conteos"
+      "Type":"controldeflujo",
+      "Description":"uno de los 3 principales ciclos,el for repite procesos hasta que su condición no se verdadera o llegué al final de sus conteos",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"if", 
-      "Name":"condicion",
-      "Description":"ayuda a tomar desiciones"
+      "Type":"condicion",
+      "Description":"ayuda a tomar desiciones",
+      "IsEnding": false,
+      "IsIrrelevant":false
     },
     {
       "Symbol":"else", 
-      "Name":"condicion",
-      "Description":"ayuda a tomar desiciones"
+      "Type":"condicion",
+      "Description":"ayuda a tomar desiciones",
+      "IsEnding": false,
+      "IsIrrelevant":false
     }
     
   ]
