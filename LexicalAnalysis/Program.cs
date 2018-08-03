@@ -9,7 +9,8 @@ using System.Linq;
 using System.Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
- 
+using System.Diagnostics.Contracts;
+
 namespace LexicalAnalysis
 {
     class Program
@@ -149,7 +150,8 @@ namespace LexicalAnalysis
 
         private static String QueueToString(Queue q)
         {
-            
+            Contract.Ensures(Contract.Result<string>() != null);
+
             var tmp = q.ToArray();
             var chars = new char[tmp.Length];
             for (int i = 0; i < tmp.Length;i++)
@@ -158,6 +160,7 @@ namespace LexicalAnalysis
             }
             var ans = new string(chars);
             q.Clear();
+            q.TrimToSize();
             return ans;
 
         }
@@ -215,7 +218,11 @@ namespace LexicalAnalysis
                     if (aux.Count > 0)
                     {
                         String str = QueueToString(aux);
-                        li.Add(str);
+                        if(IsRelevant(str) && !(string.Compare(str, "", StringComparison.Ordinal) == 0))
+                        {
+                            li.Add(str);
+                        }
+                     
                     }
                     if (!IsASpace(charArray[j]))
                     {
@@ -232,6 +239,13 @@ namespace LexicalAnalysis
             }
 
             return code;
+        }
+
+        private bool IsRelevant(string str )
+        {
+            SymbolsData sd = Table.RetrieveData(str);
+            bool ans = (sd != null) && sd.IsIrrevelant;
+            return !ans;
         }
     }
 }      
