@@ -10,9 +10,19 @@ namespace LexicalAnalysis
 
         public  SymbolsData RetrieveData(string k )
         {
-            int i = FindPosition(k);
-            SymbolsData ans = (i == -1) ? null : SymbolsData[i];
+            var i = FindPosition(k);
+            SymbolsData ans = i == -1 ? RetrieveIdentifierData() : SymbolsData[i];
             return ans;
+        }
+
+        public SymbolsData RetrieveIdentifierData()
+        {
+            SymbolsData ans = null;
+            int i = 0;
+            while (i < SymbolsData.Count && !(string.Compare(SymbolsData[i].Name, "Identificador", StringComparison.Ordinal) == 0)) { i += 1;}
+            ans = (i == SymbolsData.Count) ? null : SymbolsData[i];
+            return ans;
+
         }
 
         public int FindPosition(string k)

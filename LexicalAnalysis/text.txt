@@ -5,9 +5,10 @@ while(h<a.length){
         h++;
         x=a/n;
         z=3*5;
+        r=9-4;
         }
       }
 	}else{
-       console.log("No problem");
+    console.log("No problem");
 	}
 } 

@@ -9,4 +9,9 @@
     <PackageReference Include="JSON" Version="1.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Tree.cs" />
+    <Compile Remove="TreeNode.cs" />
+    <Compile Remove="Graph.cs" />
+  </ItemGroup>
 </Project>
