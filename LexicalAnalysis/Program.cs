@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Runtime.Serialization.Json;
-using System.Text;
 
-using System.Linq;
-using System.Net;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+
 using System.Diagnostics.Contracts;
 
 namespace LexicalAnalysis
@@ -32,7 +27,7 @@ namespace LexicalAnalysis
         // Main Method
         public static void Main()
         {
-            String Json = System.IO.File.ReadAllText("SymbolsTable.json");
+            String Json = System.IO.File.ReadAllText("../../../SymbolsTable.json");
             Program Program = new Program(Json);
             SymbolsTable Table = Program.Table;
             Program.WriteOnConsoleInfoMsg("Please enter the name of the file you want to read: ");
@@ -50,8 +45,18 @@ namespace LexicalAnalysis
             while (!exit)
             {
                 System.Console.WriteLine();
-                Console.WriteLine("<<<<<<<<<<<<<<<<<<< MENU >>>>>>>>>>>>>>>");
-                Console.WriteLine("\t 1). print the table of symbols");
+                //Console.WriteLine(
+                //    @"<<<<<<<<<<<<<<<<<<< MENU >>>>>>>>>>>>>>>\n
+                //     \t 1). print the table of symbols \n
+                //     \t 2).print the tokens table \n
+                //     \t 3). show all the arithmetic expressions \n
+                //     \t 4). analyze expression \n
+                //     \t 5). re-organize the arithmetic expressions \n
+                //     \t 6). read another file \n
+                //    \t 6). read another file \n
+                //    "
+                //);
+                Console.WriteLine(@"<<<<<<<<<<<<<<<<<<< MENU >>>>>>>>>>>>>>>");
                 Console.WriteLine("\t 2). print the tokens table");
                 Console.WriteLine("\t 3). show all the arithmetic expressions");
                 Console.WriteLine("\t 4). analyze expression");
@@ -221,7 +226,7 @@ namespace LexicalAnalysis
             ConsoleTable t = new ConsoleTable(200);
             t.PrintLine();
             Console.ForegroundColor = ConsoleColor.Green;
-            t.PrintRow("line", "sentence", "token#", "lexeme", "type", "description");
+            t.PrintRow("line", "sentence", "token#", "symbol", "type", "description");
             Console.ForegroundColor = ConsoleColor.White;
             t.PrintLine();
             t.PrintLine();
