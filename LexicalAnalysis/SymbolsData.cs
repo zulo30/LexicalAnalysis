@@ -13,6 +13,7 @@ namespace LexicalAnalysis
         public bool IsEnding { get; set; }
         public bool IsIrrelevant { get; set; }
         public bool IsChar { get; set; }
+        public bool IsContext { get; set; }
 
         public int CompareTo(object obj)
         {

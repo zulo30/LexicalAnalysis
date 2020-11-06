@@ -3,6 +3,13 @@ using System.Collections.Generic;
 
 namespace LexicalAnalysis
 {
+
+
+    //TODO: [DOCS] write the corresponding documentation
+    /// <summary>
+    /// 
+    /// </summary>
+
     public class StringAnalyzer
     {
         //main 
@@ -17,12 +24,13 @@ namespace LexicalAnalysis
 
 
 
-        // fileds 
+        // fields 
         public bool IsAccepted;
         private string Order;
         private int TapePosition;
         private List<int> errors;
         private List<char> AnalyzedString;
+        private List<List<char>> GeneratedStrings;
         private char EntryToken;
 
         // constructor
@@ -31,6 +39,9 @@ namespace LexicalAnalysis
             TapePosition = 0;
             errors = new List<int>();
             this.AnalyzedString = AnalyzedString;
+            GeneratedStrings = new List<List<char>>();
+            for (int i = 0; i < 3; i++)
+                GeneratedStrings.Add(new List<char>());
             EntryToken = FirstToken();
             IsAccepted = true;
             Expression();
@@ -42,6 +53,11 @@ namespace LexicalAnalysis
 
         public void KeepLog(){}
 
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        
         private void Expression()
         {
             if (EntryToken != '\0')
@@ -50,6 +66,11 @@ namespace LexicalAnalysis
                 ExpressionPrime();
             }
         }
+
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
 
         private void Term()
         {
@@ -60,6 +81,11 @@ namespace LexicalAnalysis
             }
         }
 
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        
         private void TermPrime()
         {
             if (EntryToken != '\0')
@@ -87,6 +113,11 @@ namespace LexicalAnalysis
             }
         }
 
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        
         private void Factor()
         {
             if (EntryToken != '\0')
@@ -112,6 +143,11 @@ namespace LexicalAnalysis
             }
         }
 
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        
         private void ExpressionPrime()
         {
             if (EntryToken != '\0')
@@ -140,6 +176,11 @@ namespace LexicalAnalysis
             }
         }
 
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+
         private void Number()
         {
             if (EntryToken != '\0')
@@ -156,6 +197,12 @@ namespace LexicalAnalysis
             }
         }
 
+
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        
         private void NumberPrime()
         {
             if (EntryToken != '\0')
@@ -176,11 +223,23 @@ namespace LexicalAnalysis
             }
         }
 
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="expression"></param>
+        /// <returns></returns>
+
         internal bool IsNumeric(char expression)
         {
             List<char> number = new List<char>(new char[] { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' });
             return number.Contains(expression);
         }
+
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
 
         private void Digit()
         {   
@@ -194,6 +253,12 @@ namespace LexicalAnalysis
                
             }
         }
+
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="t"></param>
 
         private void MakeMatch(char t)
         {
@@ -215,17 +280,35 @@ namespace LexicalAnalysis
             }
         }
 
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+
         private char NextToken()
         {
             TapePosition++;
             return AnalyzedString[TapePosition - 1];
         }
 
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+
         private char FirstToken()
         {
             TapePosition++;
             return AnalyzedString[0];
         }
+
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="msg"></param>
 
         private void ShowError(string msg)
         {
@@ -240,10 +323,22 @@ namespace LexicalAnalysis
             }
         }
 
+        //TODO: [DOCS] write the corresponding documentation 
+        /// <summary>
+        /// 
+        /// </summary>
+
         private void WriteToken()
         {
-            Console.WriteLine("Token: " + AnalyzedString[TapePosition - 1]);
+            //Console.WriteLine("Token: " + AnalyzedString[TapePosition - 1]);
         }
+
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="expression"></param>
+        /// <returns></returns>
 
         internal bool IsAOperator(char expression)
         {

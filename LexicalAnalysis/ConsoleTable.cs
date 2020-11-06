@@ -2,22 +2,39 @@
 
 namespace LexicalAnalysis
 {
+    //TODO: [DOCS] write the corresponding documentation
+    /// <summary>
+    /// 
+    /// </summary>
+
     public class ConsoleTable
     {
         int TableWidth {set; get; }
 
 
-
+        // constructor 
         public ConsoleTable(int tw)
         {
             TableWidth = tw;
         }
 
+        // methods
+
+        //TODO: [DOCS] write the corresponding documentation 
+        /// <summary>
+        /// 
+        /// </summary>
 
         public void PrintLine()
         {
             Console.WriteLine(new string('-', TableWidth));
         }
+
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="columns"></param>
 
         public void PrintRow(params string[] columns)
         {
@@ -32,6 +49,14 @@ namespace LexicalAnalysis
             Console.WriteLine(row);
         }
 
+        //TODO: [DOCS] write the corresponding documentation
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="width"></param>
+        /// <returns></returns>
+        
         public string AlignCentre(string text, int width)
         {
             if (string.IsNullOrEmpty(text))

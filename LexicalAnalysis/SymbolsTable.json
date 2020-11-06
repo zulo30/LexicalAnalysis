@@ -1,563 +1,607 @@
 ﻿{
-   "SymbolsData":[
+   "SymbolsData": [
       {
-         "Name":"Byte",
-         "Symbol":"byte",
-         "Type":[
+         "Name": "Byte",
+         "Symbol": "byte",
+         "Type": [
             "tipodedatoprimitivo",
             "palabrareservada"
          ],
-         "Description":"determina el dominio del dato",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina el dominio del dato",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Function",
-         "Symbol":"function",
-         "Type":[
+         "Name": "Function",
+         "Symbol": "function",
+         "Type": [
             "palabrareservada",
             ""
          ],
-         "Description":"son palabras que asignan funciones especificas",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "son palabras que asignan funciones especificas",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"While",
-         "Symbol":"while",
-         "Type":[
+         "Name": "While",
+         "Symbol": "while",
+         "Type": [
             "controldeflujo",
             "palabrareservada"
          ],
-         "Description":"uno de los 3 principales ciclos,el while repite procesos hasta que su condición no se verdadera",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "uno de los 3 principales ciclos,el while repite procesos hasta que su condición no se verdadera",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Short",
-         "Symbol":"short",
-         "Type":[
+         "Name": "Short",
+         "Symbol": "short",
+         "Type": [
             "tipodedatoprimitivo",
             "palabrareservada"
          ],
-         "Description":"determina el dominio del dato",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina el dominio del dato",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Int",
-         "Symbol":"int",
-         "Type":[
+         "Name": "Int",
+         "Symbol": "int",
+         "Type": [
             "tipodedatoprimitivo",
             "palabrareservada"
          ],
-         "Description":"determina el dominio del dato",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina el dominio del dato",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Long",
-         "Symbol":"long",
-         "Type":[
+         "Name": "Long",
+         "Symbol": "long",
+         "Type": [
             "tipodedatoprimitivo",
             "palabrareservada"
          ],
-         "Description":"determina el dominio del dato",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina el dominio del dato",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Char",
-         "Symbol":"char",
-         "Type":[
+         "Name": "Char",
+         "Symbol": "char",
+         "Type": [
             "tipodedatoprimitivo",
             "palabrareservada"
          ],
-         "Description":"determina el dominio del dato",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina el dominio del dato",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Float",
-         "Symbol":"float",
-         "Type":[
+         "Name": "Float",
+         "Symbol": "float",
+         "Type": [
             "tipodedatoreal",
             "palabrareservada"
          ],
-         "Description":"determina el dominio del dato",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina el dominio del dato",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Double",
-         "Symbol":"double",
-         "Type":[
+         "Name": "Double",
+         "Symbol": "double",
+         "Type": [
             "tipodedatoreal",
             "palabrareservada"
          ],
-         "Description":"determina el dominio del dato",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina el dominio del dato",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"String",
-         "Symbol":"String",
-         "Type":[
+         "Name": "String",
+         "Symbol": "String",
+         "Type": [
             "tipodedatoreal",
             "palabrareservada"
          ],
-         "Description":"determina el dominio del dato",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina el dominio del dato",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"",
-         "Symbol":"",
-         "Type":[
+         "Name": "",
+         "Symbol": "",
+         "Type": [
             "tipodedato"
          ],
-         "Description":"indica que el dato es vacío",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "indica que el dato es vacío",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"opSuma",
-         "Symbol":"+",
-         "Type":[
+         "Name": "opSuma",
+         "Symbol": "+",
+         "Type": [
             "operadoraritmetico"
          ],
-         "Description":"realiza la operación matematica: suma",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "realiza la operación matematica: suma",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"opResta",
-         "Symbol":"-",
-         "Type":[
+         "Name": "opResta",
+         "Symbol": "-",
+         "Type": [
             "operadoraritmetico"
          ],
-         "Description":"realiza la operación matematica :resta",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "realiza la operación matematica :resta",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"opMultipilcacion",
-         "Symbol":"*",
-         "Type":[
+         "Name": "opMultipilcacion",
+         "Symbol": "*",
+         "Type": [
             "operadoraritmetico"
          ],
-         "Description":"realiza la operación matematica: multiplicación",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "realiza la operación matematica: multiplicación",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"opDivision",
-         "Symbol":"/",
-         "Type":[
+         "Name": "opDivision",
+         "Symbol": "/",
+         "Type": [
             "operadoraritmetico"
          ],
-         "Description":"realiza la operación matematica: división",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "realiza la operación matematica: división",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"opModulo",
-         "Symbol":"%",
-         "Type":[
+         "Name": "opModulo",
+         "Symbol": "%",
+         "Type": [
             "operadoraritmetico"
          ],
-         "Description":"realiza la operación matematica: MOD (residuo)",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "realiza la operación matematica: MOD (residuo)",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"opIncrementar",
-         "Symbol":"++",
-         "Type":[
+         "Name": "opIncrementar",
+         "Symbol": "++",
+         "Type": [
             "operadoraritmetico"
          ],
-         "Description":"incrementa en una unidad",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "incrementa en una unidad",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Menor",
-         "Symbol":"<",
-         "Type":[
+         "Name": "Menor",
+         "Symbol": "<",
+         "Type": [
             "operadorrelacional"
          ],
-         "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "compara dos elementos, ayuda a conocer que variable es menor o mayor",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Mayor",
-         "Symbol":">",
-         "Type":[
+         "Name": "Mayor",
+         "Symbol": ">",
+         "Type": [
             "operadorrelacional"
          ],
-         "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "compara dos elementos, ayuda a conocer que variable es menor o mayor",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"menorIgual",
-         "Symbol":"<=",
-         "Type":[
+         "Name": "menorIgual",
+         "Symbol": "<=",
+         "Type": [
             "operadorrelacional"
          ],
-         "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"mayorIgual",
-         "Symbol":">=",
-         "Type":[
+         "Name": "mayorIgual",
+         "Symbol": ">=",
+         "Type": [
             "operadorrelacional"
          ],
-         "Description":"compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "compara dos elementos, ayuda a conocer que variable es menor o mayor o si son iguales",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Diferente",
-         "Symbol":"!=",
-         "Type":[
+         "Name": "Diferente",
+         "Symbol": "!=",
+         "Type": [
             "operadorrelacional"
          ],
-         "Description":"compara dos elementos, ayuda a conocer si dos variables son diferentes o iguales",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "compara dos elementos, ayuda a conocer si dos variables son diferentes o iguales",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Igual",
-         "Symbol":"==",
-         "Type":[
+         "Name": "Igual",
+         "Symbol": "==",
+         "Type": [
             "operadorrelacional"
          ],
-         "Description":"indica igualdad matematica",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "indica igualdad matematica",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"opAsignacion",
-         "Symbol":"=",
-         "Type":[
+         "Name": "opAsignacion",
+         "Symbol": "=",
+         "Type": [
             "operadorrelacional",
             "operadoraritmetico"
          ],
-         "Description":"indica igualdad matematica",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "indica igualdad matematica",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"logAnd",
-         "Symbol":"&&",
-         "Type":[
+         "Name": "logAnd",
+         "Symbol": "&&",
+         "Type": [
             "operadorlogico"
          ],
-         "Description":"determina si ambos valores son verdaderos o no",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina si ambos valores son verdaderos o no",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"logOr",
-         "Symbol":"||",
-         "Type":[
+         "Name": "logOr",
+         "Symbol": "||",
+         "Type": [
             "operadorlogico"
          ],
-         "Description":"determina si algunos de los dos valores se cumple o no",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina si algunos de los dos valores se cumple o no",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"logNot",
-         "Symbol":"!NOT",
-         "Type":[
+         "Name": "logNot",
+         "Symbol": "!NOT",
+         "Type": [
             "operadorlogico"
          ],
-         "Description":"niega",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "niega",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"parentesisDer",
-         "Symbol":"(",
-         "Type":[
+         "Name": "parentesisDer",
+         "Symbol": "(",
+         "Type": [
             "operadoragrupacion"
          ],
-         "Description":"ayuda a dar orden a una expresión",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "ayuda a dar orden a una expresión",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": true
       },
       {
-         "Name":"parentesisIzq",
-         "Symbol":")",
-         "Type":[
+         "Name": "parentesisIzq",
+         "Symbol": ")",
+         "Type": [
             "operadoragrupacion"
          ],
-         "Description":"ayuda a dar orden a una expresión",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "ayuda a dar orden a una expresión",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": true
       },
       {
-         "Name":"corchetesIzq",
-         "Symbol":"{",
-         "Type":[
+         "Name": "corchetesIzq",
+         "Symbol": "{",
+         "Type": [
             "operadoragrupacion"
          ],
-         "Description":"abre o cierra código",
-         "IsEnding":false,
-         "IsIrrelevant":true,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "abre o cierra código",
+         "IsEnding": false,
+         "IsIrrelevant": true,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": true
       },
       {
-         "Name":"corchetesDer",
-         "Symbol":"}",
-         "Type":[
+         "Name": "corchetesDer",
+         "Symbol": "}",
+         "Type": [
             "operadoragrupacion"
          ],
-         "Description":"abre o cierra código",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "abre o cierra código",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": true
       },
       {
-         "Name":"Espacio",
-         "Symbol":" ",
-         "Type":[
+         "Name": "Espacio",
+         "Symbol": " ",
+         "Type": [
             "separador"
          ],
-         "Description":"separa y ayuda a organizar el codigo",
-         "IsEnding":false,
-         "IsIrrelevant":true,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "separa y ayuda a organizar el codigo",
+         "IsEnding": false,
+         "IsIrrelevant": true,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Punto",
-         "Symbol":".",
-         "Type":[
+         "Name": "Punto",
+         "Symbol": ".",
+         "Type": [
             "separador"
          ],
-         "Description":"permite llamar  funciones",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "permite llamar  funciones",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"puntoComa",
-         "Symbol":";",
-         "Type":[
+         "Name": "puntoComa",
+         "Symbol": ";",
+         "Type": [
             "separador"
          ],
-         "Description":"organiza el codigo por sentencias",
-         "IsEnding":true,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "organiza el codigo por sentencias",
+         "IsEnding": true,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"comillasDobles",
-         "Symbol":"\"",
-         "Type":[
+         "Name": "comillasDobles",
+         "Symbol": "\"",
+         "Type": [
             "separador"
          ],
-         "Description":"permite copiar una cadena de caracteres",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":true,
-         "IsVisible":false
+         "Description": "permite copiar una cadena de caracteres",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": true,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Tabulador",
-         "Symbol":"\t",
-         "Type":[
+         "Name": "Tabulador",
+         "Symbol": "\t",
+         "Type": [
             "separador"
          ],
-         "Description":"permite detectar tabulaciones",
-         "IsEnding":true,
-         "IsIrrelevant":true,
-         "IsChar":true,
-         "IsVisible":true
+         "Description": "permite detectar tabulaciones",
+         "IsEnding": true,
+         "IsIrrelevant": true,
+         "IsChar": true,
+         "IsVisible": true,
+         "IsContext": false
       },
       {
-         "Name":"saltoDeLinea",
-         "Symbol":"\n",
-         "Type":[
+         "Name": "saltoDeLinea",
+         "Symbol": "\n",
+         "Type": [
             "separador"
          ],
-         "Description":"permite detectar tabulaciones",
-         "IsEnding":true,
-         "IsIrrelevant":true,
-         "IsChar":true,
-         "IsVisible":true
+         "Description": "permite detectar tabulaciones",
+         "IsEnding": true,
+         "IsIrrelevant": true,
+         "IsChar": true,
+         "IsVisible": true,
+         "IsContext": false
       },
       {
-         "Name":"Function",
-         "Symbol":"function",
-         "Type":[
+         "Name": "Function",
+         "Symbol": "function",
+         "Type": [
             "palabrareservada",
             "palabrareservada"
          ],
-         "Description":"permite crear funciones",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "permite crear funciones",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Begin",
-         "Symbol":"BEGIN",
-         "Type":[
+         "Name": "Begin",
+         "Symbol": "BEGIN",
+         "Type": [
             "palabrareservada",
             "palabrareservada"
          ],
-         "Description":"determina donde inicia el bloque de código",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina donde inicia el bloque de código",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"End",
-         "Symbol":"END",
-         "Type":[
+         "Name": "End",
+         "Symbol": "END",
+         "Type": [
             "palabrareservada",
             "palabrareservada"
          ],
-         "Description":"determina donde acaba el bloque de código",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "determina donde acaba el bloque de código",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Var",
-         "Symbol":"var",
-         "Type":[
+         "Name": "Var",
+         "Symbol": "var",
+         "Type": [
             "palabrareservada",
             "palabrareservada"
          ],
-         "Description":"permite crear una variable",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "permite crear una variable",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"For",
-         "Symbol":"for",
-         "Type":[
+         "Name": "For",
+         "Symbol": "for",
+         "Type": [
             "controldeflujo",
             "palabrareservada"
          ],
-         "Description":"uno de los 3 principales ciclos,el for repite procesos hasta que su condición no se verdadera o llegué al final de sus conteos",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "uno de los 3 principales ciclos,el for repite procesos hasta que su condición no se verdadera o llegué al final de sus conteos",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"If",
-         "Symbol":"if",
-         "Type":[
+         "Name": "If",
+         "Symbol": "if",
+         "Type": [
             "condicion",
             "palabrareservada"
          ],
-         "Description":"ayuda a tomar desiciones",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "ayuda a tomar desiciones",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Else",
-         "Symbol":"else",
-         "Type":[
+         "Name": "Else",
+         "Symbol": "else",
+         "Type": [
             "condicion",
             "palabrareservada"
          ],
-         "Description":"ayuda a tomar desiciones",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "ayuda a tomar desiciones",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
+         "IsContext": false
       },
       {
-         "Name":"Identificador",
-         "Symbol":"",
-         "Type":[
+         "Name": "Identificador",
+         "Symbol": "",
+         "Type": [
             "Identificador",
             "Variable"
          ],
-         "Description":"nombran entidades del lenguaje",
-         "IsEnding":false,
-         "IsIrrelevant":false,
-         "IsChar":false,
-         "IsVisible":false
+         "Description": "nombran entidades del lenguaje",
+         "IsEnding": false,
+         "IsIrrelevant": false,
+         "IsChar": false,
+         "IsVisible": false,
       }
    ]
 }
