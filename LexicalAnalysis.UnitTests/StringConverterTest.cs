@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 
 namespace LexicalAnalysis.UnitTests
@@ -9,9 +10,11 @@ namespace LexicalAnalysis.UnitTests
         [TestMethod]
         public void InfixToPrefix_ReturnsTheExpresionInPrefixFormat()
         {
-            
+            // Arrange
+            List<string> tokens = new List<string>() { "A","*","B","+","C","/","D"};
+            var s = new Sentence(tokens, 1);
             // Act
-            var actual = StringConverter.InfixToPrefix("A*B+C/D");
+            var actual = StringConverter.InfixToPrefix(s);
             var expected = "+*AB/CD";
 
             // Assert
@@ -23,10 +26,12 @@ namespace LexicalAnalysis.UnitTests
         [TestMethod]
         public void InfixToPostfix_ReturnsTheExpresionInPostfixFormat()
         {
-
+            //arrange
+            List<string> tokens = new List<string>() { "(", "52", "+", "5688", ")", "/", "672", "+", "279", "-", "282" };
+            var s = new Sentence(tokens, 1);
             // Act
-            var actual = StringConverter.InfixToPostfix("A+(B*C-(D/E-F)*G)*H");
-            var expected = "ABC*DE/F-G*-H*+";
+            var actual = StringConverter.InfixToPostfix(s);
+            var expected = "525688+672/279+282-";
 
             // Assert
             Assert.AreEqual(expected, actual);

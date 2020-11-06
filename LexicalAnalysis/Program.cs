@@ -101,7 +101,7 @@ namespace LexicalAnalysis
                         Program.ExpressionAnalyzer(code);
                         break;
                     case 5:
-                        Program.ReOrderExpressions();
+                        Program.ReOrderExpressions(code);
                         break;
                     case 6:
                         code = Program.ReadAnotherFile();
@@ -143,13 +143,12 @@ namespace LexicalAnalysis
         /// 
         /// </summary>
         
-        private void ReOrderExpressions()
+        private void ReOrderExpressions(List<Sentence> code)
         {
 
-            Console.WriteLine("<<<<<<<<<<<<<<<<<<< MENU >>>>>>>>>>>>>>>");
-            Console.WriteLine("\t 1). Pre - Order");
-            Console.WriteLine("\t 2). Post - Order");
-            Console.WriteLine();
+
+            PrintOptionsOfArithmeticSentence(code);
+            
             WriteOnConsoleInfoMsg("    Enter your choice:       ");
             var isNumeric = int.TryParse(Console.ReadLine(), out int choice);
             while (!isNumeric)
@@ -157,18 +156,19 @@ namespace LexicalAnalysis
                 WriteOnConsoleInfoMsg("please enter a valid choice:  ");
                 isNumeric = int.TryParse(Console.ReadLine(), out choice);
             }
-            switch (choice)
-            {
-                case 1:
-                    PreOrder();
-                    break;
-                case 2:
-                    PostOrder();
-                    break;
-                default:
-                    WriteOnConsoleInfoMsg("please enter a valid choice. ");
-                    break;
-            }
+            code = LookForAlgebraicSentence(code);
+
+            Console.WriteLine();
+            WriteOnConsoleInfoMsg("preorden: ");
+            var pre = StringConverter.InfixToPrefix(code[choice-1]);
+            Console.WriteLine(pre);
+            Console.WriteLine();
+            WriteOnConsoleInfoMsg("postorden: ");
+            var post = StringConverter.InfixToPostfix(code[choice-1]);
+            WriteOnConsoleInfoMsg("postorden: ");
+            Console.WriteLine(post);
+            Console.WriteLine();
+
         }
 
         //TODO: [DOCS] write the corresponding documentation 
@@ -328,6 +328,26 @@ namespace LexicalAnalysis
 
         }
 
+        public void PrintOptionsOfArithmeticSentence(List<Sentence> code)
+        {
+            WriteOnConsoleInfoMsg("Please select which arithmetic expression would you like to convert: ");
+            Console.WriteLine();
+            code = LookForAlgebraicSentence(code);
+            ConsoleTable t = new ConsoleTable(200);
+            t.PrintLine();
+            Console.ForegroundColor = ConsoleColor.Green;
+            t.PrintRow("option", "sentence");
+            Console.ForegroundColor = ConsoleColor.White;
+            t.PrintLine();
+            for (int i = 0; i < code.Count; i++)
+            {
+                if (code[i].IsAlgebraic)
+                { 
+                    t.PrintRow((i+1).ToString(), code[i].PrintSentence());
+                }
+            }
+
+        }
 
         //TODO: [DOCS] write the corresponding documentation 
         /// <summary>
